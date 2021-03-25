@@ -17,5 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user',['ManagementUserController@index']);
-// Route::resource('user','app/Http/Controllers/ManagementUserController@index');
+// Route::get('user','App\Http\Controllers\ManagementUserController@index');
+
+Route::resource('user','App\Http\Controllers\ManagementUserController');
+Route::resource('create','App\Http\Controllers\ManagementUserController');
+Route::resource('store','App\Http\Controllers\ManagementUserController');
+Route::resource('show','App\Http\Controllers\ManagementUserController');
+Route::resource('edit','App\Http\Controllers\ManagementUserController');
+Route::resource('update','App\Http\Controllers\ManagementUserController');
+Route::resource('destroy','App\Http\Controllers\ManagementUserController');
+  
