@@ -26,4 +26,11 @@ Route::resource('show','App\Http\Controllers\ManagementUserController');
 Route::resource('edit','App\Http\Controllers\ManagementUserController');
 Route::resource('update','App\Http\Controllers\ManagementUserController');
 Route::resource('destroy','App\Http\Controllers\ManagementUserController');
-  
+
+// Route::get('home', function(){
+//     return view('home');
+// });
+
+Route::get("home", function () {
+    return view("home");
+});
