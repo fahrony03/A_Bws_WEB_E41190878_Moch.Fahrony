@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Backend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +22,8 @@ Route::get('home', function () {
     return view('home');
 });
 
+Route::get('dashboard', function () {
+    return view('dashboard');
+});
 
 
