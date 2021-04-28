@@ -21,14 +21,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-// Route::get('admin/profile', function(){
+Route::get('admin/profile', function(){
 
-// })->middleware('auth');
+})->middleware('auth');
 
-// Route::get('/',function(){
+Route::get('/',function(){
 
-// })->middleware('first','second');
+})->middleware('first','second');
 
-// Route::put('post/{id}', function ($id){
+Route::put('post/{id}', function ($id){
 
-// })->middleware('role:editor');
+})->middleware('role:editor');
